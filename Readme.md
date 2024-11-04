@@ -1,7 +1,9 @@
 Python tutorials
 
 ## Data Types
-Integer
+Integer : 23,-10
+Float : 2.3, -0.98
+Complex : 2+3j
 
 
 ## Functions
