@@ -13,6 +13,19 @@ Frozen Set : { 2, 4, 9 }<br/>
 Boolean : True, False<br/>
 None : None<br/>
 
+# List
+Ordered - Maintains an order of items and can be accessed by indexing
+Mutable - Contents of list can be changed
+Can contain different data types
+
+# Tuple
+Ordered - Maintains an order of items and can be accessed by indexing
+Immutable - Ones created, tuple cannot be modified
+Can contain different data types
+
+List can contain tuple. We can add, remove, modify tuples but we cannot change the tuple itself.
+Tuple can contain lists. We can modify the list but we cannot change the structure of tuple ( replace the list with other element ).
+
 ## Functions
 Following error occurs when a function is called too many times. Default Value is 1000
 RecursionError: maximum recursion depth exceeded in comparison
