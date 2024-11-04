@@ -5,8 +5,13 @@ Integer : 23,-10<br/>
 Float : 2.3, -0.98<br/>
 Complex : 2+3j<br/>
 String : "Hello World!"<br/>
-List : [1,4,"apple"]<br/>
-
+List : [ 1, 4, "apple", 4.5]<br/>
+Tuple : ( 2, 5, "mango", 9.0 )<br/>
+Dictionary : { "key1": "val1", "key2", 56 }<br/>
+Set : { 2, 8, 9 }<br/>
+Frozen Set : { 2, 4, 9 }<br/>
+Boolean : True, False<br/>
+None : None<br/>
 
 ## Functions
 Following error occurs when a function is called too many times. Default Value is 1000
