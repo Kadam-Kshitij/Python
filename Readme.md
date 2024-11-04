@@ -13,12 +13,12 @@ Frozen Set : { 2, 4, 9 }<br/>
 Boolean : True, False<br/>
 None : None<br/>
 
-# List
+### List
 Ordered - Maintains an order of items and can be accessed by indexing
 Mutable - Contents of list can be changed
 Can contain different data types
 
-# Tuple
+### Tuple
 Ordered - Maintains an order of items and can be accessed by indexing
 Immutable - Ones created, tuple cannot be modified
 Can contain different data types
