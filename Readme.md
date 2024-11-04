@@ -4,6 +4,8 @@ Python tutorials
 Integer : 23,-10<br/>
 Float : 2.3, -0.98<br/>
 Complex : 2+3j<br/>
+String : "Hello World!"<br/>
+List : [1,4,"apple"]<br/>
 
 
 ## Functions
