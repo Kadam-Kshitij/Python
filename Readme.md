@@ -26,10 +26,20 @@ Can contain different data types
 List can contain tuple. We can add, remove, modify tuples but we cannot change the tuple itself.
 Tuple can contain lists. We can modify the list but we cannot change the structure of tuple ( replace the list with other element ).
 
+### Set
+UnOrdered - Order of elements is not fixed
+Contains Unique elements only. Adding dupicate element causes no change in set.
+Can change the contents of set
+Can contain tuples, but cannot contain lists. ie. Cannot contain mutable objects
+
+### Frozen Set
+Same as set, but cannot be modified ones created.
+
 ## Functions
 Following error occurs when a function is called too many times. Default Value is 1000
 RecursionError: maximum recursion depth exceeded in comparison
 We can increase the limit
+
 
 ```
 import sys
