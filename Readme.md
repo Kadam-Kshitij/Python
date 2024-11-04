@@ -10,6 +10,8 @@ import sys
 sys.setrecursionlimit( 2000 )
 ```
 
-We can access and use a global variable in a function without declaring it as global if you’re only reading its value.
+We can access and use a global variable in a function without declaring it as global if we are only reading its value.
 
-If you try to assign a value to the variable (e.g., message = "New message") without using global, Python will treat it as a local variable, and the global variable will remain unchanged.
+If we try to assign a value to the variable without using global, Python will treat it as a local variable, and the global variable will remain unchanged.
+
+By using ```global var``` the global variable will be considered in the function
