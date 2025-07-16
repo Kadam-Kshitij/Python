@@ -14,63 +14,59 @@ Boolean : True, False<br/>
 None : None<br/>
 
 ### List
-Ordered - Maintains an order of items and can be accessed by indexing
-Mutable - Contents of list can be changed
-Can contain different data types
+Ordered - Maintains an order of items and can be accessed by indexing<br/>
+Mutable - Contents of list can be changed<br/>
+Can contain different data types<br/>
 
 ### Tuple
-Ordered - Maintains an order of items and can be accessed by indexing
-Immutable - Ones created, tuple cannot be modified
-Can contain different data types
+Ordered - Maintains an order of items and can be accessed by indexing<br/>
+Immutable - Ones created, tuple cannot be modified<br/>
+Can contain different data types<br/>
 
-List can contain tuple. We can add, remove, modify tuples but we cannot change the tuple itself.
-Tuple can contain lists. We can modify the list but we cannot change the structure of tuple ( replace the list with other element ).
+List can contain tuple. We can add, remove, modify tuples but we cannot change the tuple itself.<br/>
+Tuple can contain lists. We can modify the list but we cannot change the structure of tuple ( replace the list with other element ).<br/>
 
 ### Set
-UnOrdered - Order of elements is not fixed
-Contains Unique elements only. Adding dupicate element causes no change in set.
-Can change the contents of set
-Can contain tuples, but cannot contain lists. ie. Cannot contain mutable objects
+UnOrdered - Order of elements is not fixed<br/>
+Contains Unique elements only. Adding dupicate element causes no change in set.<br/>
+Can change the contents of set<br/>
+Can contain tuples, but cannot contain lists. ie. Cannot contain mutable objects<br/>
 
 ### Frozen Set
-Same as set, but cannot be modified ones created.
+Same as set, but cannot be modified ones created.<br/>
 
 ## Functions
-Following error occurs when a function is called too many times. Default Value is 1000
-RecursionError: maximum recursion depth exceeded in comparison
-We can increase the limit
-
+Following error occurs when a function is called too many times. Default Value is 1000<br/>
+RecursionError: maximum recursion depth exceeded in comparison<br/>
+We can increase the limit<br/>
 
 ```
 import sys
 sys.setrecursionlimit( 2000 )
 ```
 
-We can access and use a global variable in a function without declaring it as global if we are only reading its value.
+We can access and use a global variable in a function without declaring it as global if we are only reading its value.<br/>
 
-If we try to assign a value to the variable without using global, Python will treat it as a local variable, and the global variable will remain unchanged.
+If we try to assign a value to the variable without using global, Python will treat it as a local variable, and the global variable will remain unchanged.<br/>
 
-By using ```global var``` the global variable will be considered in the function
-
-
-
+By using ```global var``` the global variable will be considered in the function<br/>
 
 
 # Printing to the console
-myInt = 2
-myFloat = float( 2 ) 	# or 2.0
-mystr = "Hello World"
-print( "%d %f %s" % ( myInt , myFloat, mystr ) )
+myInt = 2<br/>
+myFloat = float( 2 ) 	# or 2.0<br/>
+mystr = "Hello World"<br/>
+print( "%d %f %s" % ( myInt , myFloat, mystr ) )<br/>
 
 # Taking inputs number and string
-myI = int( input( "Enter a number : ") )
-print( myI )
-myS = input( "Enter a String : " )
-print( myS )
+myI = int( input( "Enter a number : ") )<br/>
+print( myI )<br/>
+myS = input( "Enter a String : " )<br/>
+print( myS )<br/>
 
 # Functions in Python
-def foo( a, b ):
-	print( "A , B = %d , %d " % ( a, b ) )
+def foo( a, b ):<br/>
+	print( "A , B = %d , %d " % ( a, b ) )<br/>
 
 foo( 23, 45 )
 
@@ -86,7 +82,7 @@ else:
 
 
 # Dictionary - Unordered key, value pair. Keys are unique
-myDictionary = { "John": 23, "Alesx": 33 }
+myDictionary = { "John": 23, "Alesx": 33 }<br/>
 myDictionary["Pika"] = 32
 # myDictionary.keys(), myDictionary.values()
 for key, value in myDictionary.items():
