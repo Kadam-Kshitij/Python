@@ -257,6 +257,42 @@ class Base:
 	def __str__( self ):
 		return str(self.a) + ", " + str(self.b)
 
+	def print( self ):
+		print( self.a, self.b )
+
 obj = Base( 90, 80 )	
 print( obj ) 	# 90, 80
+obj.print()		# 90 80
+
+del obj.a
+# obj.print()	# Error - Base object has no attribute a
+
+del obj
+# obj.print()	# Error - obj not defined
+```
+
+# Inheritance
+```
+class Base1:
+	def __init__( self, a ):
+		self.a = a
+
+class Base2:
+	def __init__( self, a ):
+		self.b = a
+
+	def printVal( self ):
+		print( self.b )
+
+class Derived:
+	def __init__( self, a, b ):
+		Base1.__init__( self, a )
+		Base2.__init__( self, b )
+
+	def printVal( self ):
+		print( self.a, self.b )	# 90 80
+		Base2.printVal( self )	# 80 
+
+obj = Derived( 90, 80 )
+obj.printVal()
 ```
