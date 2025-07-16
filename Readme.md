@@ -310,3 +310,19 @@ else:	# Executed if error does not occur
 finally:
 	print( "Done" )
 ```
+
+# Fibonacci
+```
+def fibo():
+	a = 1
+	b = 1
+	for i in range(10):
+		temp = a
+		a = b
+		b = temp + b
+		yield b
+
+
+for i in fibo():
+	print( i )
+```
