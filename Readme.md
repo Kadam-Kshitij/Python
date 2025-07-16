@@ -296,3 +296,17 @@ class Derived:
 obj = Derived( 90, 80 )
 obj.printVal()
 ```
+
+# Try Except
+```
+try:
+	print( x )
+except NameError:	# Catch name error
+	print( "Name error" )
+except:				# Catch other errors
+	print( "Error occured" )
+else:	# Executed if error does not occur
+	print( "Else" )
+finally:
+	print( "Done" )
+```
