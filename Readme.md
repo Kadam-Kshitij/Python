@@ -53,20 +53,25 @@ By using ```global var``` the global variable will be considered in the function
 
 
 # Printing to the console
-myInt = 2<br/>
-myFloat = float( 2 ) 	# or 2.0<br/>
-mystr = "Hello World"<br/>
-print( "%d %f %s" % ( myInt , myFloat, mystr ) )<br/>
+```
+myInt = 2
+myFloat = float( 2 ) 	# or 2.0
+mystr = "Hello World"
+print( "%d %f %s" % ( myInt , myFloat, mystr ) )
+```
 
 # Taking inputs number and string
-myI = int( input( "Enter a number : ") )<br/>
-print( myI )<br/>
-myS = input( "Enter a String : " )<br/>
-print( myS )<br/>
+```
+myI = int( input( "Enter a number : ") )
+print( myI )
+myS = input( "Enter a String : " )
+print( myS )
+```
 
 # Functions in Python
-def foo( a, b ):<br/>
-	print( "A , B = %d , %d " % ( a, b ) )<br/>
+```
+def foo( a, b ):
+	print( "A , B = %d , %d " % ( a, b ) )
 
 foo( 23, 45 )
 
@@ -79,9 +84,11 @@ while a > 1:
 	a -= 1
 else:
 	print( "While else" )
+```
 
 
 # Dictionary - Unordered key, value pair. Keys are unique
+```
 myDictionary = { "John": 23, "Alesx": 33 }<br/>
 myDictionary["Pika"] = 32
 # myDictionary.keys(), myDictionary.values()
@@ -89,8 +96,10 @@ for key, value in myDictionary.items():
 	print( "%s, %d" % ( key, value ) )
 myDictionary.pop( "Alesx" )
 print( myDictionary )
+```
 
 # List - Ordered colletion of items of different data types
+```
 myList = [34, "aslk", 33.4, "pop"]
 for i in range( 0, len(myList) ):
 	print( myList[i] )
@@ -101,23 +110,28 @@ myList.pop(3)
 print( myList )
 subMyList = myList[1:3]
 print( subMyList )
+```
 
 # Tuples - Ordered collection of items which cannot be modified ones created
+```
 myTuple = (2, 22.3, "lkad" )
 for i in range( 0, len(myTuple)):
 	print( myTuple[i] )
 subMyTuple = myTuple[0:1]
 print( subMyTuple )
+```
 
 # Set - UnOrdered colletion of unique elments
+```
 mySet = { 2, "askals", 55.5 }
 mySet.add( "Pop" )
 print( mySet )
 mySet.discard( 2 )	# Does nothing if element not present
 print( mySet )
+```
 
-
-
+### Class
+```
 class Base:
 	def __init__( self, name ):
 		self._name = name
@@ -135,3 +149,4 @@ obj = Derived( "alex", 45 )
 obj.display()
 obj._name = "Carry"
 obj.display()
+```
