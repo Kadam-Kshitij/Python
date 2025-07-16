@@ -130,7 +130,7 @@ mySet.discard( 2 )	# Does nothing if element not present
 print( mySet )
 ```
 
-### Class
+# Class
 ```
 class Base:
 	def __init__( self, name ):
@@ -149,4 +149,73 @@ obj = Derived( "alex", 45 )
 obj.display()
 obj._name = "Carry"
 obj.display()
+```
+
+# Casting
+```
+i = int( "3" )
+f = float( "3.4" )
+s = str( 4 )
+
+print( "%d, %f, %s" % ( i, f, s ) )		# 3, 3.400000, 4
+```
+
+# String
+```
+str = "Hello how are you ?"
+
+print( str[2] ) # l
+
+for i in str:
+	print( i )	# Prints one letter at a time. Each on a new line
+
+if "how" in str:
+	print( "True" )		# True
+else:
+	print( "False" )
+```
+
+#if else
+```
+a = -80
+if a > 0:
+	print( "Greater" )
+elif a == 0:
+	print( "Equal" )
+else:
+	print( "Lower" )	# Lower
+
+b = 90
+if a < 0 and b > 0:
+	print( "aandb" )	# aandb
+
+if a > 0 or b > 0:
+	print( "aorb" )	# aorb
+
+if not a > 0:
+	print( "nota" )	#nota
+```
+
+# While
+```
+a = 1
+
+while a < 10:	# while
+	if a%2 == 0:
+		a += 1
+		continue	# continue
+	print( a )
+	a += 1
+else:	# Executed ones when while loop ends
+	print( "Done" )
+# Else not executed in case of break happens
+```
+
+# For
+```
+for i in range( 1, 11, 2 ):
+	print( i )
+# Prints 1, 3, 5, 7, 9
+# Starts from 1 to 11 ( 11 not included ) with a increment step of 2
+# continue, break, else statemets can be used just like while
 ```
